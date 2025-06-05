@@ -5,31 +5,36 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #000;
     color: white;
-    /* height: 100%; */
+    min-height: 100vh;
+    width: 100%;
 }
 
 body {
     background-image: linear-gradient(#1a1a1a 1px, transparent 1px), linear-gradient(to right, #1a1a1a 1px, transparent 1px);
     background-size: 40px 40px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    background-attachment: fixed;
     text-align: center;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 960px;
-    padding: 4rem 1rem;
+    padding: 22vh 1rem 4rem 1rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
 }
 
 .logo {
     width: 600px;
     margin-bottom: 2rem;
+    animation: fadeInDown 1s ease-out;
 }
 
 h1 {
@@ -58,6 +63,7 @@ h2,
     border-radius: 0;
     margin-bottom: 2rem;
     display: inline-block;
+    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 p {
@@ -65,6 +71,7 @@ p {
     line-height: 1.6;
     max-width: 700px;
     margin: 0 auto 2.5rem;
+    animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .btn {
@@ -80,6 +87,7 @@ p {
     margin-bottom: 4rem;
     transition: background 0.3s;
     display: inline-block;
+    animation: fadeInUp 1s ease-out 0.9s both;
 }
 
 .btn:hover {
@@ -130,7 +138,7 @@ p {
 }
 
 .sponsor-logo.first {
-    height: 180px;
+    height: 150px;
     object-fit: contain;
 }
 
@@ -145,6 +153,7 @@ p {
     justify-content: space-between;
     padding: 2rem;
     z-index: -1;
+    opacity: 0.1;
 }
 
 .shapes .shape {
@@ -439,6 +448,28 @@ p {
 .sponsors-section {
     background: none;
     box-shadow: none;
+}
+
+.sponsors-subtitle {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}
+
+.sponsors-section .sponsor-logos {
+    margin-bottom: 2rem;
+}
+
+.sponsors-section .sponsor-logos:last-child {
+    margin-bottom: 0;
+}
+
+.sponsors-section .sponsor-logos:last-child .sponsor-logo {
+    height: 45px;
+    opacity: 0.7;
+}
+
+.sponsors-section .sponsor-logos:last-child .sponsor-logo:hover {
+    opacity: 1;
 }
 
 .prizes-section {
@@ -946,6 +977,7 @@ p {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @media (max-width: 600px) {
@@ -982,6 +1014,10 @@ html {
     color: #2970FF;
     margin-bottom: 1rem;
     letter-spacing: 1px;
+}
+
+.other-activities-title .highlight {
+    color: white;
 }
 
 .other-activities-desc {
@@ -1070,6 +1106,13 @@ html {
     background: #1857d3;
 }
 
+.activity-btn.disabled {
+    background: #444;
+    color: #666;
+    cursor: default;
+    pointer-events: none;
+}
+
 @media (max-width: 1200px) {
     .other-activities-section {
         max-width: 98vw;
@@ -1137,4 +1180,105 @@ html {
 
 .right-shapes {
     right: 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-social-icon {
+    color: #2970FF;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-icon:hover {
+    color: #1a4fb3;
+}
+
+.footer-social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.person-card.coming-soon {
+    opacity: 0.8;
+    border-style: dashed;
+}
+
+.person-card.coming-soon .person-photo {
+    background: #222;
+    border: 2px dashed #2970FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon-text {
+    font-size: 2rem;
+    color: #2970FF;
+    font-weight: 300;
+}
+
+.person-card.coming-soon .person-info {
+    opacity: 0.8;
+}
+
+.activity-card.coming-soon {
+    opacity: 0.8;
+    border: 1.5px dashed #2970FF;
+    background: #181818;
+}
+
+.activity-card.coming-soon .activity-img.coming-soon-img {
+    background: #222;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.activity-card.coming-soon:hover {
+    border: 1.5px dashed #2970FF;
+    box-shadow: 0 4px 24px 0 rgba(41, 112, 255, 0.18);
+}
+
+.activity-card.coming-soon .coming-soon-text {
+    font-size: 3rem;
+    color: #2970FF;
+    font-weight: 300;
+}
+
+.activity-card.coming-soon .activity-btn.disabled {
+    background: #444;
+    cursor: default;
+    pointer-events: none;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
