@@ -22,6 +22,12 @@ export default function Home() {
     function checkNav() {
       if (!nav || !sponsorsSection) return;
 
+      // Always show nav on mobile
+      if (window.innerWidth <= 768) {
+        nav.classList.add('visible');
+        return;
+      }
+
       const rect = sponsorsSection.getBoundingClientRect();
       if (rect.bottom < 0) {
         nav.classList.add('visible');
@@ -31,7 +37,25 @@ export default function Home() {
     }
 
     window.addEventListener('scroll', checkNav);
+    window.addEventListener('resize', checkNav);
     checkNav();
+
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.main-nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
 
     // Smooth scroll and active link
     const links = document.querySelectorAll('.main-nav .nav-link');
@@ -58,35 +82,42 @@ export default function Home() {
 
   return (
     <>
-    {/* <!-- Floating Shapes Left & Right --> */}
-        <div className="floating-shapes left-shapes">
-            <img src="assets/01.svg" alt="Shape 1" className="floating-shape" />
-            <img src="assets/02.svg" alt="Shape 2" className="floating-shape" />
-            <img src="assets/03.svg" alt="Shape 3" className="floating-shape" />
-            <img src="assets/04.svg" alt="Shape 4" className="floating-shape" />
-            <img src="assets/05.svg" alt="Shape 5" className="floating-shape" />
-        </div>
-        <div className="floating-shapes right-shapes">
-            <img src="assets/06.svg" alt="Shape 6" className="floating-shape" />
-            <img src="assets/07.svg" alt="Shape 7" className="floating-shape" />
-            <img src="assets/08.svg" alt="Shape 8" className="floating-shape" />
-            <img src="assets/09.svg" alt="Shape 9" className="floating-shape" />
-            <img src="assets/10.svg" alt="Shape 10" className="floating-shape" />
-        </div>
+      {/* Hamburger Menu */}
+      <div className="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Floating Shapes Left & Right */}
+      <div className="floating-shapes left-shapes">
+        <img src="assets/01.svg" alt="Shape 1" className="floating-shape" />
+        <img src="assets/02.svg" alt="Shape 2" className="floating-shape" />
+        <img src="assets/03.svg" alt="Shape 3" className="floating-shape" />
+        <img src="assets/04.svg" alt="Shape 4" className="floating-shape" />
+        <img src="assets/05.svg" alt="Shape 5" className="floating-shape" />
+      </div>
+      <div className="floating-shapes right-shapes">
+        <img src="assets/06.svg" alt="Shape 6" className="floating-shape" />
+        <img src="assets/07.svg" alt="Shape 7" className="floating-shape" />
+        <img src="assets/08.svg" alt="Shape 8" className="floating-shape" />
+        <img src="assets/09.svg" alt="Shape 9" className="floating-shape" />
+        <img src="assets/10.svg" alt="Shape 10" className="floating-shape" />
+      </div>
       <div className="container" id="inicio">
         <div className="hero-content">
-        <Image
-          src="/assets/ETH JAGUAR_logo blanco.png"
-          alt="ETH Jaguar Logo"
-          className="logo"
-          width={600}
-          height={330}
-        />
-        <div className="date-banner">29–31 DE AGOSTO, TEGUCIGALPA</div>
-        <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar.</p>
-        <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="btn" target="_blank">
-          Regístrate Ahora
-        </Link>
+          <Image
+            src="/assets/ETH JAGUAR_logo blanco.png"
+            alt="ETH Jaguar Logo"
+            className="logo"
+            width={600}
+            height={330}
+          />
+          <div className="date-banner">29–31 DE AGOSTO, TEGUCIGALPA</div>
+          <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar.</p>
+          <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="btn" target="_blank">
+            Regístrate Ahora
+          </Link>
         </div>
         {/* Navigation Menu */}
         <nav className="main-nav" id="mainNav">
@@ -118,6 +149,7 @@ export default function Home() {
             <img src="/assets/sponsor2.png" alt="Sponsor 2" className="sponsor-logo" />
             <img src="/assets/sponsor3.png" alt="Sponsor 3" className="sponsor-logo" />
             <img src="/assets/sponsor4.png" alt="Sponsor 4" className="sponsor-logo" />
+            <img src="/assets/sponsor5.png" alt="Sponsor 5" className="sponsor-logo" />
           </div>
         </section>
 
@@ -306,7 +338,7 @@ export default function Home() {
                 a: 'ETH Jaguar es gratuito para todos los candidatos seleccionados.'
               },
               {
-                q: '¿Puedo llevar un acompañante?',
+                q: '¿Puedo  llevar un acompañante?',
                 a: 'No. Todos los asistentes deben postularse individualmente.'
               },
               {
