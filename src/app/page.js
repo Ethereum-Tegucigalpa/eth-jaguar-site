@@ -145,7 +145,6 @@ export default function Home() {
 
           <h2 className="people-title sponsors-subtitle">Partners & Sponsors</h2>
           <div className="sponsor-logos">
-            <img src="/assets/sponsor1.png" alt="Sponsor 1" className="sponsor-logo" />
             <img src="/assets/sponsor2.png" alt="Sponsor 2" className="sponsor-logo" />
             <img src="/assets/sponsor3.png" alt="Sponsor 3" className="sponsor-logo" />
             <img src="/assets/sponsor4.png" alt="Sponsor 4" className="sponsor-logo" />
