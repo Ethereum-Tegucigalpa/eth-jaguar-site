@@ -253,6 +253,19 @@ export default function Home() {
                 <div className="person-role">Dev</div>
               </div>
             </div>
+            <div className="person-card">
+              <Image
+                src="/assets/antonio.jpeg"
+                alt="Speaker thumbnail"
+                className="person-photo"
+                width={64}
+                height={64}
+              />
+              <div className="person-info">
+                <div className="person-name">Antonio</div>
+                <div className="person-role">Google Developer Expert</div>
+              </div>
+            </div>
             <div className="person-card coming-soon">
               <div className="person-photo">
                 <span className="coming-soon-text">⋯</span>
