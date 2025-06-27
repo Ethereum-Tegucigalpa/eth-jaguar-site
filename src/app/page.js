@@ -304,9 +304,9 @@ export default function Home() {
                 unoptimized
               />
               <div className="activity-content">
-                <div className="activity-title">Nodos</div>
-                <div className="activity-date">Próximamente</div>
-                <a href="https://lu.ma/user/usr-9I4sVaSYpRJB2qp" className="activity-btn" target="_blank" rel="noopener noreferrer">
+                <div className="activity-title">Taller de Nodos</div>
+                <div className="activity-date">Julio 26, Unitec</div>
+                <a href="https://lu.ma/8k3t6dsb" className="activity-btn" target="_blank" rel="noopener noreferrer">
                   Registrarse
                 </a>
               </div>
@@ -321,8 +321,8 @@ export default function Home() {
                 unoptimized
               />
               <div className="activity-content">
-                <div className="activity-title">10 Years</div>
-                <div className="activity-date">Próximamente</div>
+                <div className="activity-title">10 años de Ethereum</div>
+                <div className="activity-date">30 de Julio</div>
                 <a href="https://lu.ma/lll5ayb5" className="activity-btn" target="_blank" rel="noopener noreferrer">
                   Registrarse
                 </a>
