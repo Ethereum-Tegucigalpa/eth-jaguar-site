@@ -143,6 +143,10 @@ p {
     object-fit: contain;
 }
 
+.nodos-img {
+    object-position: center 30%;
+}
+
 .sponsors-section .sponsor-logos:last-child .sponsor-logo {
     height: 45px;
     opacity: 0.7;
