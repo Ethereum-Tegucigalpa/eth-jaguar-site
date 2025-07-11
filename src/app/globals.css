@@ -130,16 +130,21 @@ p {
     transition: opacity 0.3s;
 }
 
-.sponsor-logo.large {
-    height: 80px;
-}
-
 .sponsor-logo:hover {
     opacity: 1;
 }
 
-.sponsor-logo.first {
-    height: 150px;
+.sponsor-logo.medium {
+    height: 50px;
+}
+
+.sponsor-logo.large {
+    height: 80px;
+}
+
+
+.sponsor-logo.larger {
+    height: 120px;
     object-fit: contain;
 }
 
@@ -147,21 +152,6 @@ p {
     object-position: center 30%;
 }
 
-.sponsors-section .sponsor-logos:last-child .sponsor-logo {
-    height: 45px;
-    opacity: 0.7;
-    object-fit: contain;
-}
-
-.sponsors-section .sponsor-logos:last-child .sponsor-logo:nth-child(4) {
-    height: 100px;
-    width: auto;
-    object-fit: contain;
-}
-
-.sponsors-section .sponsor-logos:last-child .sponsor-logo:hover {
-    opacity: 1;
-}
 
 .shapes {
     position: absolute;
@@ -484,14 +474,7 @@ p {
     margin-bottom: 0;
 }
 
-.sponsors-section .sponsor-logos:last-child .sponsor-logo {
-    height: 45px;
-    opacity: 0.7;
-}
 
-.sponsors-section .sponsor-logos:last-child .sponsor-logo:hover {
-    opacity: 1;
-}
 
 .prizes-section {
     background: none;
