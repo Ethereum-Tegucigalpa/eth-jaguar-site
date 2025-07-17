@@ -134,6 +134,14 @@ p {
     opacity: 1;
 }
 
+.sponsor-logo.unitec {
+    height: 60px;
+}
+
+.sponsor-logo.small {
+    height: 40px;
+}
+
 .sponsor-logo.medium {
     height: 50px;
 }
