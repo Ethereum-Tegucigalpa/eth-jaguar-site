@@ -114,6 +114,7 @@ export default function Home() {
                         height={330}
                     />
                     <div className="date-banner">29–31 DE AGOSTO, TEGUCIGALPA</div>
+                    <div className="beginner-friendly-banner">BEGINNER FRIENDLY</div>
                     <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar.</p>
                     <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="btn" target="_blank">
                         Regístrate Ahora
@@ -147,6 +148,7 @@ export default function Home() {
                         <img src="/assets/sponsors/sponsor2.png" alt="Sponsor 2" className="sponsor-logo" />
                         <img src="/assets/sponsors/sponsor3.png" alt="Sponsor 3" className="sponsor-logo small" />
                         <img src="/assets/sponsors/sponsor4.png" alt="Sponsor 4" className="sponsor-logo large" />
+                        <img src="/assets/sponsors/sponsor5.png" alt="Sponsor 5" className="sponsor-logo smaller" />
                     </div>
                 </section>
 
