@@ -306,9 +306,7 @@ export default function Home() {
                             <div className="activity-content">
                                 <div className="activity-title">Taller de Nodos</div>
                                 <div className="activity-date">Julio 26, Unitec</div>
-                                <a href="https://lu.ma/8k3t6dsb" className="activity-btn" target="_blank" rel="noopener noreferrer">
-                                    Registrarse
-                                </a>
+                                <div className="activity-btn disabled">Finalizado</div>
                             </div>
                         </div>
                         <div className="activity-card">
@@ -323,7 +321,39 @@ export default function Home() {
                             <div className="activity-content">
                                 <div className="activity-title">10 años de Ethereum</div>
                                 <div className="activity-date">30 de Julio</div>
-                                <a href="https://lu.ma/lll5ayb5" className="activity-btn" target="_blank" rel="noopener noreferrer">
+                                <div className="activity-btn disabled">Finalizado</div>
+                            </div>
+                        </div>
+                        <div className="activity-card">
+                            <Image
+                                src="/assets/bootcamp1.png"
+                                alt="Bootcamp Road to Eth Jaguar"
+                                className="activity-img nodos-img"
+                                width={220}
+                                height={120}
+                                unoptimized
+                            />
+                            <div className="activity-content">
+                                <div className="activity-title">Bootcamp Road to Eth Jaguar</div>
+                                <div className="activity-date">8 de Agosto</div>
+                                <a href="https://lu.ma/cdakt7qa" className="activity-btn" target="_blank" rel="noopener noreferrer">
+                                    Registrarse
+                                </a>
+                            </div>
+                        </div>
+                        <div className="activity-card">
+                            <Image
+                                src="/assets/bootcamp2.png"
+                                alt="Bootcamp Road to EthJaguar vol 2"
+                                className="activity-img"
+                                width={220}
+                                height={120}
+                                unoptimized
+                            />
+                            <div className="activity-content">
+                                <div className="activity-title">Bootcamp Road to EthJaguar vol 2</div>
+                                <div className="activity-date">15 de Agosto</div>
+                                <a href="https://lu.ma/e14affsc" className="activity-btn" target="_blank" rel="noopener noreferrer">
                                     Registrarse
                                 </a>
                             </div>
@@ -351,6 +381,7 @@ export default function Home() {
                         <img src="/assets/community/community2.png" alt="Community Partner" className="sponsor-logo larger" />
                         <img src="/assets/community/logo-unah-blanco.png" alt="Community Partner" className="sponsor-logo larger" />
                         <img src="/assets/community/ih.png" alt="Community Partner" className="sponsor-logo larger" />
+                        <img src="/assets/community/ethgt-logo-1.png" alt="ETH Guatemala" className="sponsor-logo" />
                     </div>
                 </section>
 

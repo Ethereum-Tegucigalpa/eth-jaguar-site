@@ -1305,6 +1305,10 @@ html {
     pointer-events: none;
 }
 
+.activity-card:has(.activity-btn.disabled) .activity-img {
+    filter: grayscale(100%) brightness(0.7);
+}
+
 @media (max-width: 1200px) {
     .other-activities-section {
         max-width: 98vw;
