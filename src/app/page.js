@@ -146,6 +146,7 @@ export default function Home() {
                     <h2 className="people-title sponsors-subtitle">Partners & Sponsors</h2>
                     <div className="sponsor-logos">
                         <img src="/assets/sponsors/sponsor2.png" alt="Sponsor 2" className="sponsor-logo" />
+                        <img src="/assets/sponsors/devconnect.png" alt="Devconnect" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor3.png" alt="Sponsor 3" className="sponsor-logo small" />
                         <img src="/assets/sponsors/sponsor4.png" alt="Sponsor 4" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor5.png" alt="Sponsor 5" className="sponsor-logo smaller" />
@@ -379,9 +380,10 @@ export default function Home() {
                         <img src="/assets/community/Logo EC_White.png" alt="Ethereum Community" className="sponsor-logo" />
                         <img src="/assets/community/cnbs.png" alt="cnbs" className="sponsor-logo larger" />
                         <img src="/assets/community/community2.png" alt="Community Partner" className="sponsor-logo larger" />
-                        <img src="/assets/community/logo-unah-blanco.png" alt="Community Partner" className="sponsor-logo larger" />
-                        <img src="/assets/community/ih.png" alt="Community Partner" className="sponsor-logo larger" />
                         <img src="/assets/community/ethgt-logo-1.png" alt="ETH Guatemala" className="sponsor-logo" />
+                        <img src="/assets/community/logo-ujcv.svg" alt="UJCV" className="sponsor-logo" />
+                        <img src="/assets/community/ih.png" alt="Community Partner" className="sponsor-logo larger" />
+                        <img src="/assets/community/logo-unah-blanco.png" alt="Community Partner" className="sponsor-logo larger" />
                     </div>
                 </section>
 
