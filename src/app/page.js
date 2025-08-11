@@ -115,7 +115,7 @@ export default function Home() {
                     />
                     <div className="date-banner">29–31 DE AGOSTO, TEGUCIGALPA</div>
                     <div className="beginner-friendly-banner">BEGINNER FRIENDLY</div>
-                    <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar.</p>
+                    <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar. <br></br> <br></br> Los participantes pueden ganar hasta <b className="highlight">$5,000</b> en premios.</p>
                     <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="btn" target="_blank">
                         Regístrate Ahora
                     </Link>
@@ -267,6 +267,19 @@ export default function Home() {
                                 <div className="person-role">Google Developer Expert</div>
                             </div>
                         </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/josue.jpeg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Josue Reyes</div>
+                                <div className="person-role">Impact Hub</div>
+                            </div>
+                        </div>
                         <div className="person-card coming-soon">
                             <div className="person-photo">
                                 <span className="coming-soon-text">⋯</span>
@@ -283,10 +296,10 @@ export default function Home() {
                 <section className="prizes-section" id="premios">
                     <div className="prizes-headline">
                         <span className="prizes-highlight">¡Hasta la fecha hemos confirmado:</span><br />
-                        <span className="prizes-amount">+$3,000 <span className="prizes-label">en premios</span>!</span>
+                        <span className="prizes-amount">+$5,000 <span className="prizes-label">en premios</span>!</span>
                     </div>
                     <div className="prizes-cta">
-                        <Link href="#" className="metrics-btn">Aplica al Hackathon</Link>
+                        <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="metrics-btn" target="_blank" rel="noopener noreferrer">Aplica al Hackathon</Link>
                     </div>
                 </section>
 
@@ -337,9 +350,7 @@ export default function Home() {
                             <div className="activity-content">
                                 <div className="activity-title">Bootcamp Road to Eth Jaguar</div>
                                 <div className="activity-date">8 de Agosto</div>
-                                <a href="https://lu.ma/cdakt7qa" className="activity-btn" target="_blank" rel="noopener noreferrer">
-                                    Registrarse
-                                </a>
+                                <div className="activity-btn disabled">Finalizado</div>
                             </div>
                         </div>
                         <div className="activity-card">
@@ -353,7 +364,7 @@ export default function Home() {
                             />
                             <div className="activity-content">
                                 <div className="activity-title">Bootcamp Road to EthJaguar vol 2</div>
-                                <div className="activity-date">15 de Agosto</div>
+                                <div className="activity-date">16 de Agosto</div>
                                 <a href="https://lu.ma/e14affsc" className="activity-btn" target="_blank" rel="noopener noreferrer">
                                     Registrarse
                                 </a>

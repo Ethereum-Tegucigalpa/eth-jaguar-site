@@ -1052,6 +1052,10 @@ html {
     overflow-x: hidden;
 }
 
+.highlight {
+    color: #2970FF;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 5vh 1rem 4rem 1rem;
