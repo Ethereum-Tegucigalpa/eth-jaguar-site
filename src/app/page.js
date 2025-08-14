@@ -425,6 +425,7 @@ export default function Home() {
                         <img src="/assets/community/logo-ujcv.svg" alt="UJCV" className="sponsor-logo" />
                         <img src="/assets/community/ih.png" alt="Community Partner" className="sponsor-logo larger" />
                         <img src="/assets/community/logo-unah-blanco.png" alt="Community Partner" className="sponsor-logo larger" />
+                        <img src="/assets/community/nica.png" alt="Nica" className="sponsor-logo larger " />
                     </div>
                 </section>
 
