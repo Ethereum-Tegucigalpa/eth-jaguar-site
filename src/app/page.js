@@ -280,6 +280,19 @@ export default function Home() {
                                 <div className="person-role">Impact Hub</div>
                             </div>
                         </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/ccarella.jpg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Chris Carella</div>
+                                <div className="person-role">Co-founder @ Scout Game</div>
+                            </div>
+                        </div>
                         <div className="person-card coming-soon">
                             <div className="person-photo">
                                 <span className="coming-soon-text">⋯</span>
@@ -351,6 +364,23 @@ export default function Home() {
                                 <div className="activity-title">Bootcamp Road to Eth Jaguar</div>
                                 <div className="activity-date">8 de Agosto</div>
                                 <div className="activity-btn disabled">Finalizado</div>
+                            </div>
+                        </div>
+                        <div className="activity-card">
+                            <Image
+                                src="/assets/meet1.png"
+                                alt="Hack the idea: tips para elegir tu proyecto"
+                                className="activity-img"
+                                width={220}
+                                height={120}
+                                unoptimized
+                            />
+                            <div className="activity-content">
+                                <div className="activity-title">Tips para elegir tu proyecto</div>
+                                <div className="activity-date">14 de Agosto</div>
+                                <a href="https://lu.ma/gkw2qa8s?tk=NSyRu7" className="activity-btn" target="_blank" rel="noopener noreferrer">
+                                    Registrarse
+                                </a>
                             </div>
                         </div>
                         <div className="activity-card">
