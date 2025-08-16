@@ -277,7 +277,7 @@ export default function Home() {
                             />
                             <div className="person-info">
                                 <div className="person-name">Josue Reyes</div>
-                                <div className="person-role">Impact Hub</div>
+                                <div className="person-role">Director @ Impact Hub</div>
                             </div>
                         </div>
                         <div className="person-card">
@@ -291,6 +291,58 @@ export default function Home() {
                             <div className="person-info">
                                 <div className="person-name">Chris Carella</div>
                                 <div className="person-role">Co-founder @ Scout Game</div>
+                            </div>
+                        </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/jose.jpg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Jose Vega</div>
+                                <div className="person-role">Competencia e Innovación Financiera @ CNBS</div>
+                            </div>
+                        </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/kat.png"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Katherinne Nolasco</div>
+                                <div className="person-role">Líder de programas @ Impact Hub</div>
+                            </div>
+                        </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/soh.jpg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Sohany Medina</div>
+                                <div className="person-role">Comunicación y Comunidad @ Impact Hub</div>
+                            </div>
+                        </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/juan.jpg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Juan Molina</div>
+                                <div className="person-role">Community @ Scroll</div>
                             </div>
                         </div>
                         <div className="person-card coming-soon">
@@ -378,9 +430,7 @@ export default function Home() {
                             <div className="activity-content">
                                 <div className="activity-title">Tips para elegir tu proyecto</div>
                                 <div className="activity-date">14 de Agosto</div>
-                                <a href="https://lu.ma/gkw2qa8s?tk=NSyRu7" className="activity-btn" target="_blank" rel="noopener noreferrer">
-                                    Registrarse
-                                </a>
+                                <div className="activity-btn disabled">Finalizado</div>
                             </div>
                         </div>
                         <div className="activity-card">
@@ -395,7 +445,22 @@ export default function Home() {
                             <div className="activity-content">
                                 <div className="activity-title">Bootcamp Road to EthJaguar vol 2</div>
                                 <div className="activity-date">16 de Agosto</div>
-                                <a href="https://lu.ma/e14affsc" className="activity-btn" target="_blank" rel="noopener noreferrer">
+                                <div className="activity-btn disabled">Finalizado</div>
+                            </div>
+                        </div>
+                        <div className="activity-card">
+                            <Image
+                                src="/assets/bootcamp3.png"
+                                alt="Bootcamp Road to Eth Jaguar V3 Online"
+                                className="activity-img"
+                                width={220}
+                                height={120}
+                                unoptimized
+                            />
+                            <div className="activity-content">
+                                <div className="activity-title">Bootcamp V3 Frontend (Online) </div>
+                                <div className="activity-date">25 de Agosto</div>
+                                <a href="https://lu.ma/htudmvl0" className="activity-btn" target="_blank" rel="noopener noreferrer">
                                     Registrarse
                                 </a>
                             </div>
