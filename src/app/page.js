@@ -345,6 +345,19 @@ export default function Home() {
                                 <div className="person-role">Community @ Scroll</div>
                             </div>
                         </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/oscar.jpeg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Oscar Fonseca</div>
+                                <div className="person-role">Web3 Dev</div>
+                            </div>
+                        </div>
                         <div className="person-card coming-soon">
                             <div className="person-photo">
                                 <span className="coming-soon-text">⋯</span>
