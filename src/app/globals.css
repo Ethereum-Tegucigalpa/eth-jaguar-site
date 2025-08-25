@@ -183,6 +183,11 @@ p {
     object-fit: contain;
 }
 
+.sponsor-logo.stone-logo {
+    filter: none;
+    opacity: 0.9;
+}
+
 .nodos-img {
     object-position: center 30%;
 }

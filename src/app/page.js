@@ -358,6 +358,19 @@ export default function Home() {
                                 <div className="person-role">Web3 Dev</div>
                             </div>
                         </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/nelson.jpeg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Nelson</div>
+                                <div className="person-role">Founder @ Republica DAO</div>
+                            </div>
+                        </div>
                         <div className="person-card coming-soon">
                             <div className="person-photo">
                                 <span className="coming-soon-text">⋯</span>
@@ -504,6 +517,7 @@ export default function Home() {
                         <img src="/assets/community/ih.png" alt="Community Partner" className="sponsor-logo larger" />
                         <img src="/assets/community/logo-unah-blanco.png" alt="Community Partner" className="sponsor-logo larger" />
                         <img src="/assets/community/nica.png" alt="Nica" className="sponsor-logo larger " />
+                        <img src="/assets/community/stone.png" alt="Stone" className="sponsor-logo stone-logo" />
                     </div>
                 </section>
 
