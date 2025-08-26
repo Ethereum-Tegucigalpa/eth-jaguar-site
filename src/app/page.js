@@ -295,15 +295,15 @@ export default function Home() {
                         </div>
                         <div className="person-card">
                             <Image
-                                src="/assets/jose.jpg"
+                                src="/assets/hody.png"
                                 alt="Mentor thumbnail"
                                 className="person-photo"
                                 width={64}
                                 height={64}
                             />
                             <div className="person-info">
-                                <div className="person-name">Jose Vega</div>
-                                <div className="person-role">Competencia e Innovación Financiera @ CNBS</div>
+                                <div className="person-name">Hody Canales</div>
+                                <div className="person-role">Especialista en Competencia Financiera @ CNBS</div>
                             </div>
                         </div>
                         <div className="person-card">
@@ -397,7 +397,7 @@ export default function Home() {
                 {/* Activities Section */}
                 <section className="other-activities-section" id="actividades">
                     <h2 className="other-activities-title">Preparate para el <span className="highlight">Hackathon</span></h2>
-                    <div className="other-activities-desc">¿Buscas más actividades antes o después del hackathon? ¡Descubre eventos, meetups y experiencias para conectar y aprender más!</div>
+                    <div className="other-activities-desc">¿Buscas más actividades antes del hackathon? ¡Descubre eventos, meetups y experiencias para conectar y aprender más!</div>
                     <div className="activities-cards-row">
                         <div className="activity-card">
                             <Image
@@ -486,19 +486,7 @@ export default function Home() {
                             <div className="activity-content">
                                 <div className="activity-title">Bootcamp V3 Frontend (Online) </div>
                                 <div className="activity-date">25 de Agosto</div>
-                                <a href="https://lu.ma/htudmvl0" className="activity-btn" target="_blank" rel="noopener noreferrer">
-                                    Registrarse
-                                </a>
-                            </div>
-                        </div>
-                        <div className="activity-card coming-soon">
-                            <div className="activity-img coming-soon-img">
-                                <span className="coming-soon-text">⋯</span>
-                            </div>
-                            <div className="activity-content">
-                                <div className="activity-title">Próximamente</div>
-                                <div className="activity-date">Más actividades</div>
-                                <div className="activity-btn disabled">Próximamente</div>
+                                <div className="activity-btn disabled">Finalizado</div>
                             </div>
                         </div>
                     </div>
