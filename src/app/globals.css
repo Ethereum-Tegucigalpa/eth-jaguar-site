@@ -188,6 +188,11 @@ p {
     opacity: 0.9;
 }
 
+.sponsor-logo.seguridad-logo {
+    opacity: 0.9;
+    filter: none;
+}
+
 /* Agenda Section Styles */
 .agenda-section {
     margin: 4rem auto;

@@ -300,12 +300,13 @@ export default function Home() {
 
                     <h2 className="people-title sponsors-subtitle">Partners & Sponsors</h2>
                     <div className="sponsor-logos">
-                        <img src="/assets/sponsors/arbitrum.png" alt="Arbitrum" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor2.png" alt="Sponsor 2" className="sponsor-logo" />
                         <img src="/assets/sponsors/devconnect.png" alt="Devconnect" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor3.png" alt="Sponsor 3" className="sponsor-logo small" />
                         <img src="/assets/sponsors/sponsor4.png" alt="Sponsor 4" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor5.png" alt="Sponsor 5" className="sponsor-logo smaller" />
+                        <img src="/assets/sponsors/seguridad.png" alt="Seguridad" className="sponsor-logo seguridad-logo large" />
+                        <img src="/assets/sponsors/arbitrum.png" alt="Arbitrum" className="sponsor-logo large" />
                     </div>
                 </section>
 
