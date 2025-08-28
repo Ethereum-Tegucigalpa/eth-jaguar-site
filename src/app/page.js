@@ -15,12 +15,12 @@ export default function Home() {
             });
         });
 
-        // Show/hide nav after sponsors section
+        // Show nav when reaching agenda section
         const nav = document.getElementById('mainNav');
-        const sponsorsSection = document.querySelector('.sponsors-section');
+        const agendaSection = document.querySelector('.agenda-section');
 
         function checkNav() {
-            if (!nav || !sponsorsSection) return;
+            if (!nav || !agendaSection) return;
 
             // Always show nav on mobile
             if (window.innerWidth <= 768) {
@@ -28,8 +28,8 @@ export default function Home() {
                 return;
             }
 
-            const rect = sponsorsSection.getBoundingClientRect();
-            if (rect.bottom < 0) {
+            const rect = agendaSection.getBoundingClientRect();
+            if (rect.top <= 100) {
                 nav.classList.add('visible');
             } else {
                 nav.classList.remove('visible');
@@ -115,10 +115,7 @@ export default function Home() {
                     />
                     <div className="date-banner">29–31 DE AGOSTO, TEGUCIGALPA</div>
                     <div className="beginner-friendly-banner">BEGINNER FRIENDLY</div>
-                    <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar. <br></br> <br></br> Los participantes pueden ganar hasta <b className="highlight">$5,000</b> en premios.</p>
-                    <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="btn" target="_blank">
-                        Regístrate Ahora
-                    </Link>
+                    <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar. <br></br> <br></br> Los participantes pueden ganar hasta <b className="highlight">$6,000</b> en premios.</p>
                 </div>
                 {/* Navigation Menu */}
                 <nav className="main-nav" id="mainNav">
@@ -129,11 +126,169 @@ export default function Home() {
                         <a href="#premios" className="nav-link">Premios</a>
                         <a href="#actividades" className="nav-link">Actividades</a>
                         <a href="#faq" className="nav-link">FAQ</a>
-                        <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="main-nav-btn" target="_blank">
-                            Aplicar
-                        </Link>
                     </div>
                 </nav>
+
+                {/* Agenda Section */}
+                <section className="agenda-section" id="agenda">
+                    <h2 className="people-title"><span className="highlight">Agenda</span></h2>
+                    <div className="agenda-container">
+                        <div className="agenda-day">
+                            <h3 className="agenda-day-title">Viernes 29 de Agosto</h3>
+                            <div className="agenda-items">
+                                <div className="agenda-item">
+                                    <span className="agenda-time">5:30 pm</span>
+                                    <span className="agenda-activity">Registro de Participantes</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">6:00 pm</span>
+                                    <span className="agenda-activity">Cena y Networking</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">6:30 pm</span>
+                                    <span className="agenda-activity">Apertura del Evento</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">7:00 pm</span>
+                                    <div className="agenda-activity-container">
+                                        <span className="agenda-activity">Charla: La magia de Ethereum</span>
+                                        <span className="agenda-speaker">Juan Molina</span>
+                                    </div>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">7:20 pm</span>
+                                    <div className="agenda-activity-container">
+                                        <span className="agenda-activity">Team Building / Ice Breaker - Formación de Equipos</span>
+                                        <span className="agenda-speaker">Manuela Flores</span>
+                                    </div>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">8:00 pm</span>
+                                    <span className="agenda-activity">Inicio de Hackear</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="agenda-day">
+                            <h3 className="agenda-day-title">Sábado 30 de Agosto</h3>
+                            <div className="agenda-items">
+                                <div className="agenda-item">
+                                    <span className="agenda-time">8:15 am</span>
+                                    <span className="agenda-activity">Desayuno</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">8:30 am</span>
+                                    <span className="agenda-activity">Recap</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">11:00 am</span>
+                                    <span className="agenda-activity">Ronda de Mentorías</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">12:30 pm</span>
+                                    <span className="agenda-activity">Almuerzo</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">3:00 pm</span>
+                                    <span className="agenda-activity">Ronda de Mentorías</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">6:00 pm</span>
+                                    <span className="agenda-activity">Cena</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">6:30 pm</span>
+                                    <div className="agenda-activity-container">
+                                        <span className="agenda-activity">Preparación de Pitches</span>
+                                        <span className="agenda-speaker">Josue Reyes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="agenda-day">
+                            <h3 className="agenda-day-title">Domingo 31 de Agosto</h3>
+                            <div className="agenda-items">
+                                <div className="agenda-item">
+                                    <span className="agenda-time">8:30 am</span>
+                                    <span className="agenda-activity">Desayuno</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">9:00 am</span>
+                                    <span className="agenda-activity">Ronda de Mentores</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">10:30 am</span>
+                                    <span className="agenda-activity">Fin de plazo para subir Proyectos</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">11:00 am</span>
+                                    <span className="agenda-activity">Evaluación Técnica de Proyectos</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">12:00 pm</span>
+                                    <span className="agenda-activity">Almuerzo</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">1:30 pm</span>
+                                    <span className="agenda-activity">Presentación Final de Proyectos</span>
+                                </div>
+                                <div className="agenda-item">
+                                    <span className="agenda-time">3:00 pm</span>
+                                    <span className="agenda-activity">Deliberación y entrega de premios</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Optional Workshops Section */}
+                    <h2 className="people-title "><span className="highlight">Talleres</span></h2>
+                    <div className="workshops-container">
+                        <div className="workshop-item">
+                            <div className="workshop-header">
+                                <span className="workshop-day">Viernes</span>
+                                <span className="workshop-time">8:20 pm</span>
+                            </div>
+                            <div className="workshop-content">
+                                <span className="workshop-name">Arbitrum Stylus Workshop</span>
+                                <span className="workshop-mentor">Oscar Fonseca</span>
+                            </div>
+                        </div>
+
+                        <div className="workshop-item">
+                            <div className="workshop-header">
+                                <span className="workshop-day">Sábado</span>
+                                <span className="workshop-time">9:00 am</span>
+                            </div>
+                            <div className="workshop-content">
+                                <span className="workshop-name">Building apps with AI</span>
+                                <span className="workshop-mentor">Chris Carella</span>
+                            </div>
+                        </div>
+
+                        <div className="workshop-item">
+                            <div className="workshop-header">
+                                <span className="workshop-day">Sábado</span>
+                                <span className="workshop-time">9:30 am</span>
+                            </div>
+                            <div className="workshop-content">
+                                <span className="workshop-name">Scaffold Eth</span>
+                                <span className="workshop-mentor">Ahmed Castro</span>
+                            </div>
+                        </div>
+
+                        <div className="workshop-item">
+                            <div className="workshop-header">
+                                <span className="workshop-day">Sábado</span>
+                                <span className="workshop-time">10:30 am</span>
+                            </div>
+                            <div className="workshop-content">
+                                <span className="workshop-name">Como crear una Wallet</span>
+                                <span className="workshop-mentor"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 {/* Sponsors Section */}
                 <section className="people-section sponsors-section" id="informacion">
@@ -145,6 +300,7 @@ export default function Home() {
 
                     <h2 className="people-title sponsors-subtitle">Partners & Sponsors</h2>
                     <div className="sponsor-logos">
+                        <img src="/assets/sponsors/arbitrum.png" alt="Arbitrum" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor2.png" alt="Sponsor 2" className="sponsor-logo" />
                         <img src="/assets/sponsors/devconnect.png" alt="Devconnect" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor3.png" alt="Sponsor 3" className="sponsor-logo small" />
@@ -215,6 +371,19 @@ export default function Home() {
                 <section className="people-section" id="mentores">
                     <h2 className="people-title">Speakers & <span className="highlight">Mentores</span></h2>
                     <div className="people-list">
+                        <div className="person-card silvina-card">
+                            <Image
+                                src="/assets/silvina.jpeg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Silvina</div>
+                                <div className="person-role">Facilitadora del ETH Jaguar Hackathon 2025</div>
+                            </div>
+                        </div>
                         <div className="person-card">
                             <Image
                                 src="/assets/ahmed.jpeg"
@@ -387,10 +556,7 @@ export default function Home() {
                 <section className="prizes-section" id="premios">
                     <div className="prizes-headline">
                         <span className="prizes-highlight">¡Hasta la fecha hemos confirmado:</span><br />
-                        <span className="prizes-amount">+$5,000 <span className="prizes-label">en premios</span>!</span>
-                    </div>
-                    <div className="prizes-cta">
-                        <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="metrics-btn" target="_blank" rel="noopener noreferrer">Aplica al Hackathon</Link>
+                        <span className="prizes-amount">+$6,000 <span className="prizes-label">en premios</span>!</span>
                     </div>
                 </section>
 
@@ -552,7 +718,7 @@ export default function Home() {
                             },
                             {
                                 q: '¿Hay premios para los ganadores?',
-                                a: 'En la mayoría de los casos, sí. Pero no se anuncian por adelantado.'
+                                a: 'Si. Hay hasta $6,000 en premios.'
                             }
                         ].map((faq, i) => (
                             <div key={i} className="faq-item">

@@ -188,6 +188,179 @@ p {
     opacity: 0.9;
 }
 
+/* Agenda Section Styles */
+.agenda-section {
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.agenda-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.agenda-day {
+    background: #111;
+    border: 1.5px solid #2970FF;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.agenda-day-title {
+    color: #2970FF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.agenda-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.agenda-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.agenda-item:last-child {
+    border-bottom: none;
+}
+
+.agenda-time {
+    color: #2970FF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 100px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.agenda-activity {
+    color: white;
+    font-size: 1.2rem;
+    flex: 1;
+    font-weight: 500;
+    text-align: left;
+}
+
+.agenda-activity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+}
+
+.agenda-speaker {
+    color: #aaa;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .agenda-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .agenda-time {
+        text-align: left;
+        min-width: auto;
+    }
+
+    .agenda-day {
+        padding: 1.5rem;
+    }
+
+    .agenda-day-title {
+        font-size: 1.3rem;
+    }
+
+    .agenda-activity {
+        font-size: 1.1rem;
+    }
+}
+
+/* Workshops Section Styles */
+.workshops-title {
+    color: #2970FF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1.5rem 0;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.workshops-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.workshop-item {
+    background: #111;
+    border: 1.5px solid #2970FF;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.workshop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #333;
+}
+
+.workshop-day {
+    color: #2970FF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.workshop-time {
+    color: #2970FF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.workshop-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.workshop-name {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.workshop-mentor {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .workshops-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .nodos-img {
     object-position: center 30%;
 }
@@ -353,6 +526,28 @@ p {
     min-width: 250px;
     max-width: 320px;
     flex: 1 1 250px;
+}
+
+.person-card.silvina-card {
+    margin: 0 auto 2rem auto;
+    order: -1;
+    min-width: 350px;
+    max-width: 400px;
+    padding: 1.2rem;
+    transform: scale(1.05);
+}
+
+.person-card.silvina-card .person-photo {
+    width: 80px;
+    height: 80px;
+}
+
+.person-card.silvina-card .person-name {
+    font-size: 1.3rem;
+}
+
+.person-card.silvina-card .person-role {
+    font-size: 1.1rem;
 }
 
 .person-photo {
