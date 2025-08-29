@@ -305,8 +305,11 @@ export default function Home() {
                         <img src="/assets/sponsors/sponsor3.png" alt="Sponsor 3" className="sponsor-logo small" />
                         <img src="/assets/sponsors/sponsor4.png" alt="Sponsor 4" className="sponsor-logo large" />
                         <img src="/assets/sponsors/sponsor5.png" alt="Sponsor 5" className="sponsor-logo smaller" />
-                        <img src="/assets/sponsors/seguridad.png" alt="Seguridad" className="sponsor-logo seguridad-logo large" />
                         <img src="/assets/sponsors/arbitrum.png" alt="Arbitrum" className="sponsor-logo large" />
+                        <img src="/assets/sponsors/scroll.png" alt="Scroll" className="sponsor-logo small" />
+                        <img src="/assets/sponsors/expo.png" alt="Expo" className="sponsor-logo seguridad-logo small" />
+                        <img src="/assets/sponsors/ihcafe.png" alt="IHCAFE" className="sponsor-logo seguridad-logo large" />
+                        <img src="/assets/sponsors/seguridad.png" alt="Seguridad" className="sponsor-logo seguridad-logo large" />
                     </div>
                 </section>
 
@@ -539,6 +542,19 @@ export default function Home() {
                             <div className="person-info">
                                 <div className="person-name">Nelson</div>
                                 <div className="person-role">Founder @ Republica DAO</div>
+                            </div>
+                        </div>
+                        <div className="person-card">
+                            <Image
+                                src="/assets/gladys.jpeg"
+                                alt="Mentor thumbnail"
+                                className="person-photo"
+                                width={64}
+                                height={64}
+                            />
+                            <div className="person-info">
+                                <div className="person-name">Gladys Flores</div>
+                                <div className="person-role">Mentor UNAH</div>
                             </div>
                         </div>
                         <div className="person-card coming-soon">
