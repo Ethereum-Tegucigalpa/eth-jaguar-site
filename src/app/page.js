@@ -275,7 +275,7 @@ export default function Home() {
                                 <span className="workshop-time">9:30 am</span>
                             </div>
                             <div className="workshop-content">
-                                <span className="workshop-name">Scaffold Eth</span>
+                                <span className="workshop-name">Como deployar un proyecto en Arbitrum</span>
                                 <span className="workshop-mentor">Ahmed Castro</span>
                             </div>
                         </div>
