@@ -116,8 +116,8 @@ export default function Home() {
                     <div className="date-banner">29–31 DE AGOSTO, TEGUCIGALPA</div>
                     <div className="beginner-friendly-banner">POWERED BY @ARBITRUM</div>
                     <p>ETH Jaguar es un evento tecnológico de tres días lleno de charlas técnicas, talleres, competencias y programación sin parar. <br></br> <br></br> Los participantes pueden ganar hasta <b className="highlight">$6,000</b> en premios.</p>
-                    <Link href="https://taikai.network/ethereumTGU/hackathons/eth-jaguar/" className="btn" target="_blank">
-                        Regístrate Ahora
+                    <Link href="https://lu.ma/gw0vmmhy?tk=NKZuWC" className="btn" target="_blank">
+                    Registrate a la Conferencia Ethereum: Innovación tecnológica y financiera en Honduras 🇭🇳✨
                     </Link>
                 </div>
                 {/* Navigation Menu */}
@@ -673,6 +673,23 @@ export default function Home() {
                                 <div className="activity-title">Bootcamp V3 Frontend (Online) </div>
                                 <div className="activity-date">25 de Agosto</div>
                                 <div className="activity-btn disabled">Finalizado</div>
+                            </div>
+                        </div>
+                        <div className="activity-card">
+                            <Image
+                                src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/event-covers/2z/3bdcc312-904a-43f0-9169-691c975f52cc.png"
+                                alt="Ethereum: Innovación tecnológica y financiera en Honduras"
+                                className="activity-img"
+                                width={220}
+                                height={120}
+                                unoptimized
+                            />
+                            <div className="activity-content">
+                                <div className="activity-title">Ethereum: Innovación tecnológica y financiera en Honduras</div>
+                                <div className="activity-date">3 de Septiembre</div>
+                                <a href="https://lu.ma/gw0vmmhy?tk=NKZuWC" className="activity-btn" target="_blank" rel="noopener noreferrer">
+                                    Registrarse
+                                </a>
                             </div>
                         </div>
                     </div>
